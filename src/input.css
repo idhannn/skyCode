@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+    background-color: #243c5a;
+}
+*{
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+.ikon{display: none}
+.ada{display: flex;}
+
+@media screen and (max-width: 1024px) {
+    nav li a:hover {
+        color: #243c5a;
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        top: -100%;
+        transition: all .6s;
+    }
+
+    .menu-active {
+        transition: all .6s;
+        top: 10%;
+    }
+}
